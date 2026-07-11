@@ -1,37 +1,37 @@
 # ecommerce-api
 
-this is my backend project for an e-commerce site. i built it using node.js, express, and mongodb to handle stuff like products, the cart, and orders.
+this is my backend project for an e-commerce site. i used node.js, express, and mongodb to handle products, the cart, and orders.
 
-## features
+## project features
 
-* it uses the mvc design pattern to keep the code organized.
+* it uses the mvc design pattern to keep everything organized.
 
 
-* you can manage products and filter them by things like price.
+* you can manage products and filter them by price.
 
 
 * there is a cart system that updates prices automatically.
 
 
-* there is an order system that checks stock and creates an order for you.
+* it has an order system that checks stock and creates an order.
 
 
-* i added error handling so the server doesn't crash.
+* i included error handling so the server doesn't crash.
 
 
-* there is a seed script to add some sample data to the database.
+* there is a seed script to add sample data to the database.
 
 
 
-## how to set it up
+## setup instructions
 
 1. **clone the repo:**
 `git clone [https://github.com/omarramyy3/ecommerce-api.git](https://github.com/omarramyy3/ecommerce-api.git)`
 `cd ecommerce-api`
-2. **install stuff:**
+2. **install dependencies:**
 `npm install`
 3. **setup the .env file:**
-create a `.env` file and put these in it:
+create a `.env` file with these variables:
 * PORT=5000
 
 
@@ -49,17 +49,17 @@ create a `.env` file and put these in it:
 
 
 
-4. **add the sample data:**
+4. **add sample data:**
 `npm run seed`
-5. **run it:**
+5. **run the server:**
 `npm run dev`
 
-## main endpoints
+## api endpoints
 
-| method | endpoint | what it does |
+| method | url | description |
 | --- | --- | --- |
-| get | /api/categories | shows all categories |
-| post | /api/categories | adds a new category |
-| get | /api/products | shows products with filters |
-| patch | /api/cart/items/:id | updates item count in cart |
-| post | /api/orders | creates an order |
+| get | /api/categories | get all categories |
+| post | /api/categories | create category |
+| get | /api/products | get products with filters |
+| patch | /api/cart/items/:id | update cart item |
+| post | /api/orders | checkout and create order |
