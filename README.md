@@ -63,3 +63,4 @@ create a `.env` file with these variables:
 | get | /api/products | get products with filters |
 | patch | /api/cart/items/:id | update cart item |
 | post | /api/orders | checkout and create order |
+* the link of the github repository again https://github.com/omarramyy3/ecommerce-api
