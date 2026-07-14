@@ -1,66 +1,115 @@
 # ecommerce-api
 
-this is my backend project for an e-commerce site. i used node.js, express, and mongodb to handle products, the cart, and orders.
+this is a backend api for an e-commerce platform. it handles product management, shopping carts, and order processing using node.js, express.js, mongodb, and mongoose.
 
-## project features
+## features
 
-* it uses the mvc design pattern to keep everything organized.
-
-
-* you can manage products and filter them by price.
+* categories api
 
 
-* there is a cart system that updates prices automatically.
+* products api
 
 
-* it has an order system that checks stock and creates an order.
+* cart api
 
 
-* i included error handling so the server doesn't crash.
-
-
-* there is a seed script to add sample data to the database.
+* orders api
 
 
 
-## setup instructions
+## prerequisites
 
-1. **clone the repo:**
-`git clone [https://github.com/omarramyy3/ecommerce-api.git](https://github.com/omarramyy3/ecommerce-api.git)`
-`cd ecommerce-api`
-2. **install dependencies:**
-`npm install`
-3. **setup the .env file:**
-create a `.env` file with these variables:
-* PORT=5000
+* node.js
 
 
-* MONGO_URI=your_database_url
+* mongodb (local or atlas)
 
 
-* NODE_ENV=development
-
-
-* JWT_SECRET=your_secret
-
-
-* CORS_ORIGIN=http://localhost:3000
+* npm or yarn
 
 
 
+## installation
 
-4. **add sample data:**
-`npm run seed`
-5. **run the server:**
-`npm run dev`
+1. git clone https://github.com/omarramyy3/ecommerce-api
+
+2. npm install
+
+
+3. setup .env
+
+
+4. npm run seed
+
+
+5. npm run dev
+
+
+
+## environment variables
+
+| variable | explanation |
+| --- | --- |
+| PORT | port the server runs on
+
+ |
+| MONGO_URI | connection string for mongodb
+
+ |
+| NODE_ENV | environment mode
+
+ |
+| JWT_SECRET | secret for tokens
+
+ |
+| CORS_ORIGIN | allowed origin for cors
+
+ |
 
 ## api endpoints
 
 | method | url | description |
 | --- | --- | --- |
-| get | /api/categories | get all categories |
-| post | /api/categories | create category |
-| get | /api/products | get products with filters |
-| patch | /api/cart/items/:id | update cart item |
-| post | /api/orders | checkout and create order |
-* the link of the github repository again https://github.com/omarramyy3/ecommerce-api
+| get | /api/categories | list all categories
+
+ |
+| post | /api/categories | add new category
+
+ |
+| get | /api/products | list products with filters
+
+ |
+| patch | /api/cart/items/:id | update cart item
+
+ |
+| post | /api/orders | checkout and create order
+
+ |
+
+## project structure
+
+* config/ (database connection)
+
+
+* controllers/ (request logic)
+
+
+* models/ (database schemas)
+
+
+* routes/ (api routes)
+
+
+* middleware/ (custom middleware)
+
+
+* utils/ (helper functions)
+
+
+* seed.js (seed script)
+
+
+* app.js (server setup)
+
+
+* postman/ (api documentation)
