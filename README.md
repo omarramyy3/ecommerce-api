@@ -1,6 +1,6 @@
 # ecommerce-api
 
-this is a backend api for an e-commerce platform. it handles product management, shopping carts, and order processing using node.js, express.js, mongodb, and mongoose.
+this is a backend api for an e-commerce platform. it handles product management and order processing using node.js, express.js, mongodb, and mongoose.
 
 ## features
 
